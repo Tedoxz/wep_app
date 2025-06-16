@@ -1,0 +1,83 @@
+/* form-detail-tahapan.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #495057;
+}
+
+form select,
+form input[type="date"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #fdfdfd;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+form select:focus,
+form input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #ffffff;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+a.cancel-btn {
+    margin-left: 15px;
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a.cancel-btn:hover {
+    color: #343a40;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+}

@@ -1,0 +1,94 @@
+/* edit_lowongan.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #34495e;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+a {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: #95a5a6;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #7f8c8d;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 30px 10px;
+    }
+
+    button, a {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}

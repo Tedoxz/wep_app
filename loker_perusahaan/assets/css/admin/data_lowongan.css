@@ -1,0 +1,113 @@
+/* table-style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody td::before {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #333;
+    }
+
+    tbody td:nth-of-type(1)::before { content: "No"; }
+    tbody td:nth-of-type(2)::before { content: "Lowongan"; }
+    tbody td:nth-of-type(3)::before { content: "Departemen"; }
+    tbody td:nth-of-type(4)::before { content: "Deskripsi"; }
+    tbody td:nth-of-type(5)::before { content: "Kuota"; }
+    tbody td:nth-of-type(6)::before { content: "Tanggal Buka"; }
+    tbody td:nth-of-type(7)::before { content: "Tanggal Tutup"; }
+}
+.btn-lihat {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.btn-lihat:hover {
+    background-color: #0056b3;
+}
